@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "name": "New Balance 327",
+        "price": "Rp695.000",
+        "images": [
+            "images/NB/NB327.webp"
+        ],
+        "category": "New Balance",
+        "description": "Sepatu bergaya retro ini menampilkan logo `N` besar dan sol yang tekstur, membuatnya cocok untuk dikenakan sehari-hari atau hiking ringan. Desainnya yang ringan terbuat dari kombinasi suede dan nylon yang tahan lama."
+    },
+    {
+        "id": 2,
+        "name": "Fresh Foam Roav Golf Shoes",
+        "price": "Rp1.209.000",
+        "images": [
+            "images/NB/NBFFRGS.webp"
+        ],
+        "category": "New Balance",
+        "isTrending": true,
+        "description": "Sepatu golf ini dirancang tanpa paku dan dilengkapi dengan teknologi Fresh Foam yang memberikan bantalan empuk, membuatnya nyaman baik untuk lapangan golf maupun pemakaian sehari-hari. Sol luar yang tahan lama memastikan traksi tinggi di berbagai permukaan, sementara bagian atas yang ringan meningkatkan aliran udara, menjaga kaki Anda tetap sejuk dan nyaman selama aktivitas di lapangan."
+    },
+    {
+        "id": 3,
+        "name": "New Balance 574 Core",
+        "price": "Rp1.240.000",
+        "images": [
+            "images/NB/NB574C.webp"
+        ],
+        "category": "New Balance",
+        "description": "Model ikonik ini memiliki sol yang kokoh dirancang untuk penggunaan di jalan atau trek. Dilengkapi dengan bantalan EVA yang ringan dan tersedia dalam berbagai warna, menjadikannya serbaguna untuk gaya apa pun."
+    },
+    {
+        "id": 4,
+        "name": "New Balance 237",
+        "price": "Rp1.100.000",
+        "images": [
+            "images/NB/NB237.webp"
+        ],
+        "category": "New Balance",
+        "description": "Terinspirasi oleh alas kaki tahun 1970-an, model 237 ini memiliki sentuhan vintage dengan warna-warna bold dan midsole yang lebih panjang, menjadikannya sempurna bagi penggemar gaya retro."
+    },
+    {
+        "id": 5,
+        "name": "New Balance 990v5",
+        "price": "Rp2.700.000",
+        "images": [
+            "images/NB/NB990V5.webp"
+        ],
+        "category": "New Balance",
+        "description": "Sepatu ini memiliki teknologi ENCAP di midsole untuk kenyamanan optimal dan dilengkapi dengan detail reflektif, membuatnya cocok untuk dikenakan di malam hari atau olahraga ringan."
+    },
+    {
+        "id": 6,
+        "name": "New Balance 530",
+        "price": "Rp1.470.000",
+        "images": [
+            "images/NB/NB530.webp"
+        ],
+        "category": "New Balance",
+        "description": "Sepatu stylish ini dilengkapi dengan teknologi bantalan ABZORB dan terbuat dari bahan mesh dan karet, memberikan penampilan yang fashionable serta kenyamanan ekstra."
+    },
+    {
+        "id": 7,
+        "name": "New Balance 550",
+        "price": "Rp1.590.000",
+        "images": [
+            "images/NB/NB550.webp"
+        ],
+        "category": "New Balance",
+        "isTrending": true,
+        "description": "Awalnya dirancang untuk basket, model 550 ini memiliki bagian atas suede yang ramping dan sol luar yang tahan lama, menawarkan tampilan atletik klasik yang telah menjadi populer di kalangan penggemar New Balance."
+    },
+    {
+        "id": 8,
+        "name": "Reebok Classic Leather",
+        "price": "Rp1.230.000 - Rp1.410.000",
+        "images": [
+            "images/REEBOK/REEBOKCL.webp"
+        ],
+        "category": "Reebok",
+        "isTrending": true,
+        "description": "Reebok Classic Leather adalah model ikonik yang dikenal karena desain minimalisnya. Terbuat dari kulit asli berkualitas tinggi, sepatu ini menawarkan kenyamanan dan daya tahan yang sangat baik. Dengan sol karet yang memberikan traksi, sepatu ini cocok untuk pemakaian sehari-hari serta aktivitas kasual. Desainnya yang abadi memudahkan untuk dipadukan dengan berbagai gaya pakaian."
+    },
+    {
+        "id": 9,
+        "name": "Reebok Club C 85",
+        "price": "Rp1.300.000",
+        "images": [
+            "images/REEBOK/REEBOKCC.webp"
+        ],
+        "category": "Reebok",
+        "isTrending": true,
+        "description": "Reebok Club C 85 adalah sepatu tenis klasik yang telah menjadi favorit untuk gaya kasual. Dengan desain yang bersih dan sederhana, sepatu ini terbuat dari kulit lembut, memberikan kenyamanan saat dikenakan. Dikenal karena daya tahannya, Club C 85 dilengkapi dengan sol karet yang menawarkan traksi baik untuk aktivitas sehari-hari."
+    },
+    {
+        "id": 10,
+        "name": "PEDAUH MID CUT MEN",
+        "price": "Rp740.000",
+        "images": [
+            "images/EIGER/PMCM.jpg"
+        ],
+        "category": "Eiger",
+        "description": "Sepatu mid-cut ini menggabungkan gaya dan fungsionalitas, membuatnya sempurna untuk petualangan di perkotaan maupun luar ruangan. Dengan bahan atas yang tahan lama, sepatu ini memberikan dukungan dan kenyamanan yang cukup untuk pemakaian lama. Sol luar dirancang untuk traksi optimal, memastikan stabilitas di berbagai medan, dari jalan kota hingga jalur yang kasar."
+    },
+    {
+        "id": 11,
+        "name": "Ardonix",
+        "price": "Rp1.440.000",
+        "images": [
+            "images/EIGER/ARDONIX.webp"
+        ],
+        "category": "Eiger",
+        "description": "Ardonix dirancang untuk jiwa petualang. Sepatu ini memiliki desain kokoh dan sol dengan traksi tinggi, menjadikannya ideal untuk hiking atau panjat tebing. Menawarkan dukungan pergelangan kaki yang sangat baik dan bantalan, memungkinkan Anda menghadapi tanjakan curam dan permukaan yang tidak rata dengan percaya diri. Stylish namun fungsional, sepatu ini cocok untuk semua jenis pakaian luar ruangan."
+    },
+    {
+        "id": 12,
+        "name": "Mamba Mid",
+        "price": "Rp1.500.000",
+        "images": [
+            "images/EIGER/MM.webp"
+        ],
+        "category": "Eiger",
+        "description": "Mamba Mid dirancang untuk memberikan dukungan pergelangan kaki dan stabilitas yang luar biasa, menjadikannya pilihan yang tepat bagi penggemar hiking. Konstruksi yang ringan dan bahan yang bernapas memastikan kenyamanan selama perjalanan panjang. Desain kokoh sepatu ini dilengkapi dengan estetika stylish, cocok untuk aktivitas luar ruangan maupun acara kasual."
+    },
+    {
+        "id": 13,
+        "name": "VIPERA",
+        "price": "Rp1.500.000",
+        "images": [
+            "images/EIGER/VIPERA.webp"
+        ],
+        "category": "Eiger",
+        "description": "Vipera dirancang untuk para petualang yang mengutamakan kenyamanan dan performa. Dengan konstruksi ringan, sepatu ini memungkinkan kebebasan bergerak sambil memberikan cengkeraman yang sangat baik di permukaan licin atau tidak rata. Kerah yang empuk dan insole yang dilapisi memberikan kenyamanan sepanjang hari, menjadikannya ideal untuk hiking, trekking, atau pemakaian kasual."
+    },
+    {
+        "id": 14,
+        "name": "Gaea Mid",
+        "price": "Rp1.050.000",
+        "images": [
+            "images/EIGER/GM.webp"
+        ],
+        "category": "Eiger",
+        "isTrending": true,
+        "description": "Gaea Mid dirancang untuk penggunaan sehari-hari. Mereka juga dilengkapi dengan pelindung karet yang melindungi sepatu saat perpindahan gigi. Detail reflektif di bagian belakang meningkatkan visibilitas dalam kondisi cahaya rendah, menjadikannya cocok untuk petualangan di perkotaan maupun luar ruangan."
+    },
+    {
+        "id": 15,
+        "name": "BISKRA",
+        "price": "Rp800.000",
+        "images": [
+            "images/EIGER/BISKRA.webp"
+        ],
+        "category": "Eiger",
+        "description": "Biskra dirancang untuk serbaguna, cocok untuk acara kasual maupun trekking ringan. Memiliki bahan atas yang tahan lama yang dapat menahan aus, sementara sol yang bergrip memastikan stabilitas di berbagai permukaan. Dengan desain stylish, sepatu ini adalah tambahan yang bagus untuk setiap lemari pakaian, menggabungkan kepraktisan dengan mode."
+    },
+    {
+        "id": 16,
+        "name": "HARRIER",
+        "price": "Rp1.300.000 ",
+        "images": [
+            "images/EIGER/HARRIER.webp"
+        ],
+        "category": "Eiger",
+        "description": "Harrier adalah sepatu kokoh yang dirancang untuk mereka yang menikmati hiking dan aktivitas sehari-hari. Memiliki konstruksi yang kuat, memberikan dukungan dan bantalan yang sangat baik untuk kaki Anda. Sol yang memiliki traksi menawarkan cengkeraman di berbagai medan, memastikan Anda tetap aman baik saat berada di jalur maupun berjalan di kota. Desain modernnya menjadikannya pilihan yang fashionable."
+    },
+    {
+        "id": 17,
+        "name": "Gazelle Hi Cream",
+        "price": "Rp420.000",
+        "images": [
+            "images/COMPASS/HC.webp"
+        ],
+        "category": "Compass",
+        "description": "Gazelle Hi Cream memberikan tampilan bersih dan netral dengan struktur kanvas high-top premium. Model ini menawarkan daya tahan dan kenyamanan, membuatnya cocok untuk berbagai kesempatan, dengan sol karet klasik yang menambah stabilitas dan gaya."
+    },
+    {
+        "id": 18,
+        "name": "Gazelle Low Black White",
+        "price": "Rp390.000",
+        "images": [
+            "images/COMPASS/LB.webp"
+        ],
+        "category": "Compass",
+        "description": "Gazelle Low Black White menawarkan desain low-cut dengan kontras hitam-putih yang ramping. Dikenal karena daya tariknya yang abadi, model ini dibangun dengan sol karet yang tahan lama untuk meningkatkan performa dan gaya."
+    },
+    {
+        "id": 19,
+        "name": "Nike Air Force 1 '07",
+        "price": "Rp1.650.000",
+        "images": [
+            "images/NIKE/AF107.png"
+        ],
+        "category": "Nike",
+        "description": "Sneaker klasik ini menggabungkan estetika retro dengan kenyamanan modern. Menampilkan desain ikonik, bagian atas kulit yang tahan lama, dan bantalan Air yang khas, Air Force 1 '07 tetap menjadi favorit untuk pemakaian kasual dan stylish."
+    },
+    {
+        "id": 20,
+        "name": "Nike Pegasus 41 GORE-TEX",
+        "price": "Rp2.500.000",
+        "images": [
+            "images/NIKE/PEGASUS.png"
+        ],
+        "category": "Nike",
+        "isTrending": true,
+        "description": "Dirancang untuk para penggemar outdoor, sepatu lari tahan air ini memberikan stabilitas dan cengkeraman di medan yang kasar. Teknologi GORE-TEX memastikan lari tetap kering dalam kondisi basah, sementara bantalan responsif menawarkan kenyamanan untuk jarak jauh."
+    },
+    {
+        "id": 21,
+        "name": "Nike Dunk Low Retro",
+        "price": "Rp2.700.000",
+        "images": [
+            "images/NIKE/DLR.png"
+        ],
+        "category": "Nike",
+        "description": "Awalnya sepatu basket, Dunk Low Retro telah menjadi ikon gaya hidup dengan garis bersih, profil rendah, dan bagian atas kulit yang tahan lama. Versi ini menampilkan warna-warna baru untuk memberikan sentuhan segar pada siluet yang abadi."
+    },
+    {
+        "id": 22,
+        "name": "Nike Vaporfly 3",
+        "price": "Rp3.900.000",
+        "images": [
+            "images/NIKE/VAPORFLY.png"
+        ],
+        "category": "Nike",
+        "description": "Sepatu balap kelas atas, Vaporfly 3 memberikan kecepatan optimal dengan desain ringan dan busa responsif. Pelat serat karbonnya memastikan dorongan, menjadikannya ideal untuk pelari kompetitif yang ingin mencapai rekor pribadi baru."
+    },
+    {
+        "id": 23,
+        "name": "Galaxy V Lowcut (LC) Black White",
+        "price": "Rp210.000",
+        "images": [
+            "images/JHONSON/LBW.jpg"
+        ],
+        "category": "Jhonson",
+        "description": "Sneaker low-top hitam-putih klasik, Galaxy V LC menghadirkan tampilan abadi untuk pengaturan kasual dan semi-formal. Desainnya yang bersih membuatnya cocok untuk berbagai gaya dan kesempatan."
+    },
+    {
+        "id": 24,
+        "name": "Sky Highcut (HC) All Black",
+        "price": "Rp280.000",
+        "images": [
+            "images/JHONSON/SHC.jpg"
+        ],
+        "category": "Jhonson",
+        "description": "Sneaker high -top all-black yang ramping ini memberikan tampilan monokrom yang trendi, cocok untuk gaya urban dan streetwear. Desainnya yang sederhana melengkapi baik pakaian kasual maupun edgy."
+    },
+    {
+        "id": 25,
+        "name": "Woosh Lowcut (LC) Black",
+        "price": "Rp350.000",
+        "images": [
+            "images/JHONSON/WBW.jpg"
+        ],
+        "category": "Jhonson",
+        "description": "Model low-cut yang nyaman dalam warna hitam, ideal untuk tampilan kasual namun stylish. Woosh LC Black dapat dipadukan dengan berbagai outfit, menjadikannya sebagai staple fleksibel dalam lemari pakaian."
+    }
+]
