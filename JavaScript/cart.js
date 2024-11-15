@@ -12,15 +12,26 @@ getData();
 checkCart();
 
 async function getData() {
-    let response = await fetch('json/products.json');
-    let json = await response.json();
-    products = json;
+    try {
+        let response = await fetch('json/products.json');
+        if (!response.ok) {
+            throw new Error("Failed to fetch product data.");
+        }
+        products = await response.json();
+    } catch (error) {
+        console.error("Error fetching product data:", error);
+    }
 }
 
 function loadCart() {
     let storedCart = localStorage.getItem('cart');
     if (storedCart) {
-        cart = JSON.parse(storedCart);
+        try {
+            cart = JSON.parse(storedCart);
+        } catch (error) {
+            console.error("Error parsing cart data from localStorage:", error);
+            cart = [];
+        }
     }
 }
 
@@ -40,16 +51,16 @@ function addToCart(productId, inputQuantity = 1) {
         }
         saveCart();
         checkCart();
+    } else {
+        console.warn("Product not found with ID:", productId);
     }
 }
 
 function parsePrice(priceString) {
-    // Remove the 'Rp' prefix and any commas or periods used as thousand separators
-    return parseFloat(priceString.replace(/Rp|[.,]/g, '').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1')) || 0;
+    return parseFloat(priceString.replace(/Rp|[.,]/g, '').trim()) || 0;
 }
 
 function formatPrice(price) {
-    // Format the price as "Rp1.200.000"
     return `Rp${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}`;
 }
 
@@ -61,7 +72,7 @@ function addCartToHTML() {
         content += `
         <div class="cart_product">
             <div class="cart_product_img">  
-                <img src=${product.images[0]}>
+                <img src=${product.images[0]} alt="${product.name}">
             </div>
             <div class="cart_product_info">  
                 <div class="top_card">
@@ -117,63 +128,56 @@ function updateTotalPrice() {
         let price = parsePrice(product.price);
         return sum + (price * product.quantity);
     }, 0);
-    totalPrice.innerHTML = formatPrice(total);
+    if (totalPrice) {
+        totalPrice.innerHTML = formatPrice(total);
+    }
     return total;
 }
 
-// Initial call to display the cart products on page load
 function checkCart() {
-    if (cart.length == 0) {
+    if (cart.length === 0) {
         cartTextElements.forEach(element => {
             element.classList.add("empty");
             element.innerHTML = "Keranjang belanja kosong.";
-        })
-        cartCounter.innerHTML = 0;
-        btnControl.style.display = "none";
-        cartTotal.style.display = "none";
+        });
+        if (cartCounter) cartCounter.innerHTML = 0;
+        if (btnControl) btnControl.style.display = "none";
+        if (cartTotal) cartTotal.style.display = "none";
         checkCartPage(0, 0);
     } else {
         cartTextElements.forEach(element => {
             element.classList.remove("empty");
-        })
+        });
         addCartToHTML();
         let totalQuantity = cart.reduce((sum, product) => sum + product.quantity, 0);
-        cartCounter.innerHTML = totalQuantity;
-        btnControl.style.display = "flex";
-        cartTotal.style.display = "flex";
+        if (cartCounter) cartCounter.innerHTML = totalQuantity;
+        if (btnControl) btnControl.style.display = "flex";
+        if (cartTotal) cartTotal.style.display = "flex";
         let total = updateTotalPrice();
         checkCartPage(total, totalQuantity);
     }
 }
 
-// Add cart page not cart section
 function checkCartPage(total, totalQuantity) {
     if (window.location.pathname.includes("cartPage.html")) {
-        if (cart.length == 0) {
-            cartItemsCount.innerHTML = `(0 items)`;
-            document.getElementById("Subtotal").innerHTML = `Rp0`;
-            document.getElementById("total_order").innerHTML = `Rp0`;
-        } else {
+        let subTotal = document.getElementById("Subtotal");
+        let totalOrder = document.getElementById("total_order");
+        if (cartItemsCount) {
             cartItemsCount.innerHTML = `(${totalQuantity} items)`;
-            displayInCartPage(total);
+        }
+        if (subTotal && totalOrder) {
+            subTotal.innerHTML = formatPrice(total);
+            totalOrder.innerHTML = formatPrice(total + 20000); // Add shipping cost
         }
     }
-}
-
-function displayInCartPage(total) {
-    total = isNaN(total) ? 0 : total;
-    let subTotal = document.getElementById("Subtotal");
-    subTotal.innerHTML = formatPrice(total);
-    let totalOrder = total + 20000; // Calculate total order including shipping (if any)
-    document.getElementById("total_order").innerHTML = formatPrice(totalOrder);
 }
 
 function checkOut() {
     let email = localStorage.getItem('email');
     let password = localStorage.getItem('password');
-    if (cart.length != 0) {
-        let total = updateTotalPrice(); // Hitung total harga
-        localStorage.setItem('total_price', total); // Simpan total harga ke localStorage
+    if (cart.length !== 0) {
+        let total = updateTotalPrice();
+        localStorage.setItem('total_price', total);
         if (email && password) {
             window.location.href = "checkout.html";
         } else {
