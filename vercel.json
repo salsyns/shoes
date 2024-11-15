@@ -1,0 +1,36 @@
+{
+    "routes": [
+      {
+        "src": "^/cart$",
+        "dest": "/cartPage.html"
+      },
+      {
+        "src": "^/login$",
+        "dest": "/login.html"
+      },
+      {
+        "src": "^/$",
+        "dest": "/index.html"
+      },
+      {
+        "src": "^/checkout$",
+        "dest": "/checkout.html"
+      },
+      {
+        "src": "^/ProductDetails$",
+        "dest": "/ProductDetails.html"
+      },
+      {
+        "src": "^/products$",
+        "dest": "/products.html"
+      },
+      {
+        "src": "^/signup$",
+        "dest": "/signup.html"
+      }
+    ],
+    "headers": [
+    { "source": "/(.*)", "headers": [{ "key": "Cache-Control", "value": "max-age=3600" }] }
+  ]
+  }
+  
