@@ -7,39 +7,24 @@
         <meta name="keywords" content="Shoes">
         <meta name="author" content="">
         <link rel="icon" href="./images/logowhite.jpg" type="image/x-icon">
-        <!-- css -->
         <link rel="stylesheet" href="Style/login.css">
         <link rel="stylesheet" href="Style/main.css">
-        <!-- Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-        <!-- icon -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <title>Kelompok4</title>
+        <title>Kelompok 4</title>
     </head>
 <body>
     <header class="container" id="header">
         <div class="header_top">
-              <!-- <div class="header_social">
-                <a href="https://www.instagram.com/Kelompok4/?igsh=eWpjbWFqc3FlbGhl" target="_blank">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-                <a href="https://www.facebook.com/people/SA_Fashionstyle/100088622209447/?mibextid=LQQJ4d" target="_blank">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-                <a href="https://wa.me/201007738790" target="_blank">
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                </a>
-              </div> -->
               <img src="./images/iconk4.png" alt="page logo" id="logo">
               <nav id="navbar">
                 <menu>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Shop</a></li>
-                        <!-- <li><a href="#">Contact</a></li> -->
                     </ul>
                 </menu>
             </nav>
@@ -59,7 +44,6 @@
                 </a>
            </div>
         </div>
-        
     </header>
     <section id="login">
        <div class="container">
@@ -67,35 +51,32 @@
         <div id="form">
             <label for="email">Email</label>
             <input type="text" name="email" placeholder="Email" id="email" onblur="validationEmail();">
-            <span id="invalidEmail" class="alert">Email is not a valid</span>
-            <label for="password">Password</label>
-            <input type="password" name="Password" placeholder="Password" id="password" onblur="validPassword();">
-            <span id="invalidPass" class="alert">Password must be 8 chars at least</span>
-            <label for="confirmPassword">Confirm Password</label>
+            <span id="invalidEmail" class="alert">Email Tidak Valid</span>
+            <label for="password">Katasandi</label>
+            <input type="password" name="Password" placeholder="Katasandi" id="password" onblur="validPassword();">
+            <span id="invalidPass" class="alert">Katasandi Minimal 8 Karakter!</span>
+            <label for="confirmPassword">Konfirmasi Katasandi</label>
             <input type="password" name="confirmPassword" 
-            placeholder="Confirm Password" 
+            placeholder="Konfirmasi Katasandi" 
             id="confirmPassword" 
             onblur="validConfirmPassword();">
-            <span id="invalidConfirmPass" class="alert">Password Not Match</span>
+            <span id="invalidConfirmPass" class="alert">Katasandi Tidak Cocok!</span>
             <div class="submit">
-                <button id="btn-login">Sign In</button> 
-                <a href="signup.html" id="signup">New customer? Sign up for an account</a>
+                <button id="btn-login">Masuk</button>
             </div>  
         </div>
        </div>
         
     </section>
     <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
-     <!-- cart -->
     <div class="cart-section">
         <div class="cart-header">
-            <h2>SHOPPING CART</h2>
+            <h2>KERANJANG BELANJA</h2>
             <div class="closeCart">
                 <ion-icon name="close-outline" id="closeCart"></ion-icon>
             </div>
         </div>
         <div class="cart_products">
-              <!-- add cart products in js -->
         </div>
         <div class="cart_total">
             <h3>Total:</h3>
@@ -110,7 +91,6 @@
         <div class="footer-top">
            <div class="footer-logo">
                <img src="./images/iconk4.png" alt="logo" width="140">
-               <p>The customer is at the heart of our unique business model, which includes design.</p>
            </div>
            <div class="footer-list">
                <div class="list">

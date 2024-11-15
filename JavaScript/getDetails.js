@@ -11,7 +11,7 @@ async function getData(){
         if (product) {
             displayDetails(product);
         } else {
-            console.error('Product not found');
+            console.error('Product tidak ditemukan');
         }
     } catch (error) {
         console.error('Error fetching the data', error);

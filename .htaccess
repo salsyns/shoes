@@ -1,0 +1,17 @@
+# Aktifkan Rewrite Engine
+RewriteEngine On
+
+# Redirect root URL ke index.html
+RewriteRule ^$ index.html [L]
+
+# Redirect specific routes to corresponding HTML files
+RewriteRule ^cart$ cartPage.html [L]
+RewriteRule ^login$ login.html [L]
+RewriteRule ^checkout$ checkout.html [L]
+RewriteRule ^ProductDetails$ ProductDetails.html [L]
+RewriteRule ^products$ products.html [L]
+RewriteRule ^signup$ signup.html [L]
+
+
+# Tangani URL yang tidak ditemukan (404)
+ErrorDocument 404 /404.html

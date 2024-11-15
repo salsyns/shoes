@@ -3,14 +3,47 @@ window.addEventListener("load", function() {
     let totalPrice = document.getElementById("total_price");
     showCheckAnimation();
     addDate();
+    
+    // Cek apakah ID pesanan sudah ada di localStorage
+    let orderId = localStorage.getItem('order_id');
+    if (!orderId) {
+        // Jika tidak ada, buat ID pesanan baru
+        orderId = generateOrderId();
+        localStorage.setItem('order_id', orderId); // Simpan di localStorage
+    }
+    document.getElementById("id_order").innerText = orderId;
+
     let total = localStorage.getItem('total_price'); // Pastikan kunci yang benar
     if (total) {
         total = parseFloat(total);
-        totalPrice.innerHTML = formatPrice(total); // Update to use formatPrice function
+        totalPrice.innerHTML = formatPrice(total); // Update untuk menggunakan fungsi formatPrice
     } else {
-        totalPrice.innerHTML = formatPrice(0); // Update to use formatPrice function
+        totalPrice.innerHTML = formatPrice(0); // Update untuk menggunakan fungsi formatPrice
     }
+
+    // Simpan detail pesanan ke localStorage
+    saveOrderToLocal(orderId, total);
 });
+
+function generateOrderId() {
+    const randomNum = Math.floor(Math.random() * 10000); // Angka acak
+    return `ORDERK4SHOES-${randomNum}`; // ID pesanan unik
+}
+
+function saveOrderToLocal(orderId, total) {
+    const orderData = {
+        id: orderId,
+        total: total,
+        date: new Date().toISOString()
+    };
+
+    // Ambil data pesanan yang sudah ada dari localStorage
+    let orders = JSON.parse(localStorage.getItem('orders')) || [];
+    orders.push(orderData); // Tambahkan pesanan baru ke array
+
+    // Simpan kembali ke localStorage
+    localStorage.setItem('orders', JSON.stringify(orders));
+}
 
 function showCheckAnimation() {
     const checkIconContainer = document.getElementById('checkoutIcon');
@@ -33,8 +66,8 @@ function addDate() {
     let date = document.getElementById("order_date");
     const now = new Date();
     const months = [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
+        "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+        "Juli", "Agustus", "September", "Oktober", "November", "Desember"
     ];
     const day = now.getDate(); 
     const month = months[now.getMonth()]; 
@@ -47,11 +80,12 @@ function clearCart() {
 }
 
 function backHome() {
+    localStorage.removeItem('order_id'); // Hapus ID pesanan
     window.location.href = "index.html"; 
 }
 
-// Helper function to format prices
+// Fungsi pembantu untuk memformat harga
 function formatPrice(price) {
-    // Format the price as "Rp1.200.000"
+    // Format harga sebagai "Rp1.200.000"
     return `Rp${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}`;
 }
