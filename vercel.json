@@ -1,5 +1,5 @@
 {
-    "routes": [
+    "rewrites": [
       {
         "src": "^/cart$",
         "dest": "/cartPage.html"
@@ -29,8 +29,7 @@
         "dest": "/signup.html"
       }
     ],
-    "headers": [
-    { "source": "/(.*)", "headers": [{ "key": "Cache-Control", "value": "max-age=3600" }] }
-  ]
+    "cleanUrls": true,
+    "trailingSlash": false
   }
   
