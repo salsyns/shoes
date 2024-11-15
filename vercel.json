@@ -1,32 +1,32 @@
 {
     "rewrites": [
       {
-        "src": "^/cart$",
-        "dest": "/cartPage.html"
+        "source": "/cart",
+        "destination": "/cartPage.html"
       },
       {
-        "src": "^/login$",
-        "dest": "/login.html"
+        "source": "/login",
+        "destination": "/login.html"
       },
       {
-        "src": "^/$",
-        "dest": "/index.html"
+        "source": "/",
+        "destination": "/index.html"
       },
       {
-        "src": "^/checkout$",
-        "dest": "/checkout.html"
+        "source": "/checkout",
+        "destination": "/checkout.html"
       },
       {
-        "src": "^/ProductDetails$",
-        "dest": "/ProductDetails.html"
+        "source": "/ProductDetails",
+        "destination": "/ProductDetails.html"
       },
       {
-        "src": "^/products$",
-        "dest": "/products.html"
+        "source": "/products",
+        "destination": "/products.html"
       },
       {
-        "src": "^/signup$",
-        "dest": "/signup.html"
+        "source": "/signup",
+        "destination": "/signup.html"
       }
     ],
     "cleanUrls": true,
