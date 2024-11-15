@@ -1,7 +1,7 @@
 {
     "rewrites": [
       {
-        "source": "/cartPage",
+        "source": "/cart",
         "destination": "/cartPage.html"
       },
       {
