@@ -146,6 +146,14 @@ function checkCart() {
     }
 }
 
+function displayInCartPage(total) {
+    total = isNaN(total) ? 0 : total;
+    let subTotal = document.getElementById("Subtotal");
+    subTotal.innerHTML = formatPrice(total);
+    let totalOrder = total + 20000; // Calculate total order including shipping (if any)
+    document.getElementById("total_order").innerHTML = formatPrice(totalOrder);
+}
+
 // Add cart page not cart section
 function checkCartPage(total, totalQuantity) {
     if (window.location.pathname.includes("cartPage.html")) {
@@ -160,13 +168,6 @@ function checkCartPage(total, totalQuantity) {
     }
 }
 
-function displayInCartPage(total) {
-    total = isNaN(total) ? 0 : total;
-    let subTotal = document.getElementById("Subtotal");
-    subTotal.innerHTML = formatPrice(total);
-    let totalOrder = total + 20000; // Calculate total order including shipping (if any)
-    document.getElementById("total_order").innerHTML = formatPrice(totalOrder);
-}
 
 function checkOut() {
     let email = localStorage.getItem('email');
