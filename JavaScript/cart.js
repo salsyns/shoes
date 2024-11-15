@@ -7,26 +7,14 @@ const cartTextElements = document.querySelectorAll(".cart_products");
 const btnControl = document.querySelector(".btn_control");
 const cartTotal = document.querySelector(".cart_total");
 
-// Elemen tambahan untuk subtotal dan total order
-let subTotalElement = document.getElementById("Subtotal");
-let totalOrderElement = document.getElementById("total_order");
-
-// Load data dan cart
 loadCart();
 getData();
 checkCart();
 
 async function getData() {
-    try {
-        let response = await fetch('/json/products.json'); // Path produk JSON
-        if (!response.ok) {
-            throw new Error(`Failed to fetch products.json: ${response.statusText}`);
-        }
-        let json = await response.json();
-        products = json;
-    } catch (error) {
-        console.error("Error fetching product data:", error);
-    }
+    let response = await fetch('json/products.json');
+    let json = await response.json();
+    products = json;
 }
 
 function loadCart() {
@@ -56,10 +44,12 @@ function addToCart(productId, inputQuantity = 1) {
 }
 
 function parsePrice(priceString) {
-    return parseFloat(priceString.replace(/Rp|[.,]/g, '').trim()) || 0;
+    // Remove the 'Rp' prefix and any commas or periods used as thousand separators
+    return parseFloat(priceString.replace(/Rp|[.,]/g, '').replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1')) || 0;
 }
 
 function formatPrice(price) {
+    // Format the price as "Rp1.200.000"
     return `Rp${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}`;
 }
 
@@ -131,12 +121,13 @@ function updateTotalPrice() {
     return total;
 }
 
+// Initial call to display the cart products on page load
 function checkCart() {
-    if (cart.length === 0) {
+    if (cart.length == 0) {
         cartTextElements.forEach(element => {
             element.classList.add("empty");
             element.innerHTML = "Keranjang belanja kosong.";
-        });
+        })
         cartCounter.innerHTML = 0;
         btnControl.style.display = "none";
         cartTotal.style.display = "none";
@@ -144,7 +135,7 @@ function checkCart() {
     } else {
         cartTextElements.forEach(element => {
             element.classList.remove("empty");
-        });
+        })
         addCartToHTML();
         let totalQuantity = cart.reduce((sum, product) => sum + product.quantity, 0);
         cartCounter.innerHTML = totalQuantity;
@@ -155,12 +146,13 @@ function checkCart() {
     }
 }
 
+// Add cart page not cart section
 function checkCartPage(total, totalQuantity) {
     if (window.location.pathname.includes("cartPage.html")) {
-        if (cart.length === 0) {
+        if (cart.length == 0) {
             cartItemsCount.innerHTML = `(0 items)`;
-            subTotalElement.innerHTML = `Rp0`;
-            totalOrderElement.innerHTML = `Rp0`;
+            document.getElementById("Subtotal").innerHTML = `Rp0`;
+            document.getElementById("total_order").innerHTML = `Rp0`;
         } else {
             cartItemsCount.innerHTML = `(${totalQuantity} items)`;
             displayInCartPage(total);
@@ -170,21 +162,18 @@ function checkCartPage(total, totalQuantity) {
 
 function displayInCartPage(total) {
     total = isNaN(total) ? 0 : total;
-    if (subTotalElement && totalOrderElement) {
-        subTotalElement.innerHTML = formatPrice(total);
-        let totalOrder = total + 20000; // Contoh: tambah ongkir
-        totalOrderElement.innerHTML = formatPrice(totalOrder);
-    } else {
-        console.error("Subtotal or Total Order elements are not found in the DOM");
-    }
+    let subTotal = document.getElementById("Subtotal");
+    subTotal.innerHTML = formatPrice(total);
+    let totalOrder = total + 20000; // Calculate total order including shipping (if any)
+    document.getElementById("total_order").innerHTML = formatPrice(totalOrder);
 }
 
 function checkOut() {
     let email = localStorage.getItem('email');
     let password = localStorage.getItem('password');
     if (cart.length != 0) {
-        let total = updateTotalPrice();
-        localStorage.setItem('total_price', total);
+        let total = updateTotalPrice(); // Hitung total harga
+        localStorage.setItem('total_price', total); // Simpan total harga ke localStorage
         if (email && password) {
             window.location.href = "checkout.html";
         } else {
