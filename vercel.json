@@ -1,7 +1,7 @@
 {
     "rewrites": [
       {
-        "source": "/keranjang",
+        "source": "/cart",
         "destination": "/cartPage.html"
       },
       {
@@ -9,23 +9,23 @@
         "destination": "/login.html"
       },
       {
-        "source": "/home",
+        "source": "/",
         "destination": "/index.html"
       },
       {
-        "source": "/prosespembayaran",
+        "source": "/checkout",
         "destination": "/checkout.html"
       },
       {
-        "source": "/produkdetail",
+        "source": "/ProductDetails",
         "destination": "/ProductDetails.html"
       },
       {
-        "source": "/produk",
+        "source": "/products",
         "destination": "/products.html"
       },
       {
-        "source": "/daftar",
+        "source": "/signup",
         "destination": "/signup.html"
       }
     ],
