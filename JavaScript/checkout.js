@@ -25,6 +25,42 @@ window.addEventListener("load", function() {
     saveOrderToLocal(orderId, total);
 });
 
+// Update fungsi untuk menginisiasi pembayaran QR di halaman checkout
+function initiatePayment() {
+    const orderId = localStorage.getItem('order_id');
+    const totalPrice = parseFloat(localStorage.getItem('total_price'));
+
+    if (orderId && totalPrice) {
+        fetch('/api/payment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ orderId, totalPrice }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status_code === '200') {
+                // Tampilkan QR code untuk pembayaran
+                const qrImageUrl = data.qris.qr_code_url; // URL QR Code dari response Midtrans
+                document.getElementById('payment-qr').src = qrImageUrl;
+            } else {
+                alert('Payment initiation failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error initiating payment:', error);
+            alert('Error initiating payment');
+        });
+    } else {
+        alert('Invalid order or price');
+    }
+}
+
+// Panggil fungsi ini saat pengguna siap melakukan pembayaran
+document.getElementById('payment-button').addEventListener('click', initiatePayment);
+
+
 function generateOrderId() {
     const randomNum = Math.floor(Math.random() * 10000); // Angka acak
     return `ORDERK4SHOES-${randomNum}`; // ID pesanan unik

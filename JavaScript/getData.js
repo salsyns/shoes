@@ -25,7 +25,7 @@ function displayProducts(){
             </a>
         </div>
         <div class="card-info">
-             <h4 class="product-name" onclick=displayDetails(${productsContainer[i].id});>${productsContainer[i].name}</h4>
+             <h4 class="product-name" onclick=displayDetails(${productsContainer[i].id});>${productsContainer[i].name} (${productsContainer[i].stok})</h4>
              <h5 class="product-price">${productsContainer[i].price}</h5>
         </div>
     </div>`

@@ -1,9 +1,12 @@
+// validation.js
 var emailInput = document.getElementById("email");
 var passwordInput = document.getElementById("password");
 var confirmPasswordInput = document.getElementById("confirmPassword");
 var submitBtn = document.getElementById("btn-login");
 
-submitBtn.addEventListener("click", function() {
+submitBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // Mencegah form untuk submit dan reload halaman
+
     let valid = true;
 
     if (!validationEmail()) {
@@ -16,64 +19,62 @@ submitBtn.addEventListener("click", function() {
         valid = false;
     }
 
-    if(valid){
-        savaData();
+    if (valid) {
+        saveData();
+        updateUserName();
         reset();
-        setupUI();
-        window.location.href = "index.html";
+        window.location.href = "index.html"; // Arahkan ke halaman setelah login
     }
 });
 
-function validationEmail(){
+function validationEmail() {
     var emailReg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     if (!emailReg.test(emailInput.value)) {
         emailInput.style.border = "2px solid red";
-        document.getElementById("invalidEmail").style.display = "block";
         return false;
     } else {
         emailInput.style.border = "2px solid #3a3a3d";
-        document.getElementById("invalidEmail").style.display = "none";
         return true;
     }
 }
-function validPassword(){
+
+function validPassword() {
     if (passwordInput.value.length < 8) {
         passwordInput.style.border = "2px solid red";
-        document.getElementById("invalidPass").style.display = "block";
         return false;
     } else {
         passwordInput.style.border = "2px solid #3a3a3d";
-        document.getElementById("invalidPass").style.display = "none";
         return true;
     }
 }
+
 function validConfirmPassword() {
-    var password = passwordInput.value;
-    var confirmPassword = confirmPasswordInput.value;
-    if (password !== confirmPassword) {
+    if (passwordInput.value !== confirmPasswordInput.value) {
         confirmPasswordInput.style.border = "2px solid red";
-        document.getElementById("invalidConfirmPass").style.display = "block";
         return false;
     } else {
         confirmPasswordInput.style.border = "2px solid #3a3a3d";
-        document.getElementById("invalidConfirmPass").style.display = "none";
         return true;
     }
 }
-function reset(){
+
+function saveData() {
+    var email = emailInput.value;
+    var password = passwordInput.value;
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+}
+
+function updateUserName() {
+    var email = emailInput.value;
+    var userName = email.split("@")[0]; // Ambil bagian sebelum '@' dari email
+    localStorage.setItem("userName", userName); // Simpan nama pengguna di localStorage
+    // Mengubah teks pada elemen dengan id "user_name" jika sudah ada di halaman yang lain
+    document.getElementById("user_name").textContent = userName;
+}
+
+function reset() {
     emailInput.value = "";
     passwordInput.value = "";
     confirmPasswordInput.value = "";
-    emailInput.style.border = "1px solid rgba(17, 17, 17, 0.55)";
-    passwordInput.style.border = "1px solid rgba(17, 17, 17, 0.55)";
-    confirmPasswordInput.style.border = "1px solid rgba(17, 17, 17, 0.55)";
-}
-
-function savaData(){
-     var savedEmail = localStorage.getItem("email");
-     var savedPassword = localStorage.getItem("password");
-     var finalEmail = savedEmail ? savedEmail : emailInput.value;
-     var finalPassword = savedPassword ? savedPassword : passwordInput.value;
-     localStorage.setItem("email", finalEmail);
-     localStorage.setItem("password", finalPassword);
 }

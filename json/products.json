@@ -7,6 +7,7 @@
             "images/NB/NB327.webp"
         ],
         "category": "New Balance",
+        "stok": 4,
         "description": "Sepatu bergaya retro ini menampilkan logo `N` besar dan sol yang tekstur, membuatnya cocok untuk dikenakan sehari-hari atau hiking ringan. Desainnya yang ringan terbuat dari kombinasi suede dan nylon yang tahan lama."
     },
     {
@@ -17,6 +18,7 @@
             "images/NB/NBFFRGS.webp"
         ],
         "category": "New Balance",
+        "stok": 10,
         "isTrending": true,
         "description": "Sepatu golf ini dirancang tanpa paku dan dilengkapi dengan teknologi Fresh Foam yang memberikan bantalan empuk, membuatnya nyaman baik untuk lapangan golf maupun pemakaian sehari-hari. Sol luar yang tahan lama memastikan traksi tinggi di berbagai permukaan, sementara bagian atas yang ringan meningkatkan aliran udara, menjaga kaki Anda tetap sejuk dan nyaman selama aktivitas di lapangan."
     },
@@ -28,6 +30,7 @@
             "images/NB/NB574C.webp"
         ],
         "category": "New Balance",
+        "stok": 19,
         "description": "Model ikonik ini memiliki sol yang kokoh dirancang untuk penggunaan di jalan atau trek. Dilengkapi dengan bantalan EVA yang ringan dan tersedia dalam berbagai warna, menjadikannya serbaguna untuk gaya apa pun."
     },
     {
@@ -38,6 +41,7 @@
             "images/NB/NB237.webp"
         ],
         "category": "New Balance",
+        "stok": 10,
         "description": "Terinspirasi oleh alas kaki tahun 1970-an, model 237 ini memiliki sentuhan vintage dengan warna-warna bold dan midsole yang lebih panjang, menjadikannya sempurna bagi penggemar gaya retro."
     },
     {
@@ -48,6 +52,7 @@
             "images/NB/NB990V5.webp"
         ],
         "category": "New Balance",
+        "stok": 18,
         "description": "Sepatu ini memiliki teknologi ENCAP di midsole untuk kenyamanan optimal dan dilengkapi dengan detail reflektif, membuatnya cocok untuk dikenakan di malam hari atau olahraga ringan."
     },
     {
@@ -58,6 +63,7 @@
             "images/NB/NB530.webp"
         ],
         "category": "New Balance",
+        "stok": 6,
         "description": "Sepatu stylish ini dilengkapi dengan teknologi bantalan ABZORB dan terbuat dari bahan mesh dan karet, memberikan penampilan yang fashionable serta kenyamanan ekstra."
     },
     {
@@ -68,6 +74,7 @@
             "images/NB/NB550.webp"
         ],
         "category": "New Balance",
+        "stok": 2,
         "isTrending": true,
         "description": "Awalnya dirancang untuk basket, model 550 ini memiliki bagian atas suede yang ramping dan sol luar yang tahan lama, menawarkan tampilan atletik klasik yang telah menjadi populer di kalangan penggemar New Balance."
     },
@@ -79,6 +86,7 @@
             "images/REEBOK/REEBOKCL.webp"
         ],
         "category": "Reebok",
+        "stok": 105,
         "isTrending": true,
         "description": "Reebok Classic Leather adalah model ikonik yang dikenal karena desain minimalisnya. Terbuat dari kulit asli berkualitas tinggi, sepatu ini menawarkan kenyamanan dan daya tahan yang sangat baik. Dengan sol karet yang memberikan traksi, sepatu ini cocok untuk pemakaian sehari-hari serta aktivitas kasual. Desainnya yang abadi memudahkan untuk dipadukan dengan berbagai gaya pakaian."
     },
@@ -90,6 +98,7 @@
             "images/REEBOK/REEBOKCC.webp"
         ],
         "category": "Reebok",
+        "stok": 19,
         "isTrending": true,
         "description": "Reebok Club C 85 adalah sepatu tenis klasik yang telah menjadi favorit untuk gaya kasual. Dengan desain yang bersih dan sederhana, sepatu ini terbuat dari kulit lembut, memberikan kenyamanan saat dikenakan. Dikenal karena daya tahannya, Club C 85 dilengkapi dengan sol karet yang menawarkan traksi baik untuk aktivitas sehari-hari."
     },
@@ -101,6 +110,7 @@
             "images/EIGER/PMCM.jpg"
         ],
         "category": "Eiger",
+        "stok": 108,
         "description": "Sepatu mid-cut ini menggabungkan gaya dan fungsionalitas, membuatnya sempurna untuk petualangan di perkotaan maupun luar ruangan. Dengan bahan atas yang tahan lama, sepatu ini memberikan dukungan dan kenyamanan yang cukup untuk pemakaian lama. Sol luar dirancang untuk traksi optimal, memastikan stabilitas di berbagai medan, dari jalan kota hingga jalur yang kasar."
     },
     {
@@ -111,6 +121,7 @@
             "images/EIGER/ARDONIX.webp"
         ],
         "category": "Eiger",
+        "stok": 69,
         "description": "Ardonix dirancang untuk jiwa petualang. Sepatu ini memiliki desain kokoh dan sol dengan traksi tinggi, menjadikannya ideal untuk hiking atau panjat tebing. Menawarkan dukungan pergelangan kaki yang sangat baik dan bantalan, memungkinkan Anda menghadapi tanjakan curam dan permukaan yang tidak rata dengan percaya diri. Stylish namun fungsional, sepatu ini cocok untuk semua jenis pakaian luar ruangan."
     },
     {
@@ -121,6 +132,7 @@
             "images/EIGER/MM.webp"
         ],
         "category": "Eiger",
+        "stok": 999,
         "description": "Mamba Mid dirancang untuk memberikan dukungan pergelangan kaki dan stabilitas yang luar biasa, menjadikannya pilihan yang tepat bagi penggemar hiking. Konstruksi yang ringan dan bahan yang bernapas memastikan kenyamanan selama perjalanan panjang. Desain kokoh sepatu ini dilengkapi dengan estetika stylish, cocok untuk aktivitas luar ruangan maupun acara kasual."
     },
     {
@@ -131,6 +143,7 @@
             "images/EIGER/VIPERA.webp"
         ],
         "category": "Eiger",
+        "stok": 26,
         "description": "Vipera dirancang untuk para petualang yang mengutamakan kenyamanan dan performa. Dengan konstruksi ringan, sepatu ini memungkinkan kebebasan bergerak sambil memberikan cengkeraman yang sangat baik di permukaan licin atau tidak rata. Kerah yang empuk dan insole yang dilapisi memberikan kenyamanan sepanjang hari, menjadikannya ideal untuk hiking, trekking, atau pemakaian kasual."
     },
     {
@@ -142,6 +155,7 @@
         ],
         "category": "Eiger",
         "isTrending": true,
+        "stok": 17,
         "description": "Gaea Mid dirancang untuk penggunaan sehari-hari. Mereka juga dilengkapi dengan pelindung karet yang melindungi sepatu saat perpindahan gigi. Detail reflektif di bagian belakang meningkatkan visibilitas dalam kondisi cahaya rendah, menjadikannya cocok untuk petualangan di perkotaan maupun luar ruangan."
     },
     {
@@ -152,6 +166,7 @@
             "images/EIGER/BISKRA.webp"
         ],
         "category": "Eiger",
+        "stok": 11,
         "description": "Biskra dirancang untuk serbaguna, cocok untuk acara kasual maupun trekking ringan. Memiliki bahan atas yang tahan lama yang dapat menahan aus, sementara sol yang bergrip memastikan stabilitas di berbagai permukaan. Dengan desain stylish, sepatu ini adalah tambahan yang bagus untuk setiap lemari pakaian, menggabungkan kepraktisan dengan mode."
     },
     {
@@ -162,6 +177,7 @@
             "images/EIGER/HARRIER.webp"
         ],
         "category": "Eiger",
+        "stok": 41,
         "description": "Harrier adalah sepatu kokoh yang dirancang untuk mereka yang menikmati hiking dan aktivitas sehari-hari. Memiliki konstruksi yang kuat, memberikan dukungan dan bantalan yang sangat baik untuk kaki Anda. Sol yang memiliki traksi menawarkan cengkeraman di berbagai medan, memastikan Anda tetap aman baik saat berada di jalur maupun berjalan di kota. Desain modernnya menjadikannya pilihan yang fashionable."
     },
     {
@@ -172,6 +188,7 @@
             "images/COMPASS/HC.webp"
         ],
         "category": "Compass",
+        "stok": 99,
         "description": "Gazelle Hi Cream memberikan tampilan bersih dan netral dengan struktur kanvas high-top premium. Model ini menawarkan daya tahan dan kenyamanan, membuatnya cocok untuk berbagai kesempatan, dengan sol karet klasik yang menambah stabilitas dan gaya."
     },
     {
@@ -182,6 +199,7 @@
             "images/COMPASS/LB.webp"
         ],
         "category": "Compass",
+        "stok": 2,
         "description": "Gazelle Low Black White menawarkan desain low-cut dengan kontras hitam-putih yang ramping. Dikenal karena daya tariknya yang abadi, model ini dibangun dengan sol karet yang tahan lama untuk meningkatkan performa dan gaya."
     },
     {
@@ -192,6 +210,7 @@
             "images/NIKE/AF107.png"
         ],
         "category": "Nike",
+        "stok": 38,
         "description": "Sneaker klasik ini menggabungkan estetika retro dengan kenyamanan modern. Menampilkan desain ikonik, bagian atas kulit yang tahan lama, dan bantalan Air yang khas, Air Force 1 '07 tetap menjadi favorit untuk pemakaian kasual dan stylish."
     },
     {
@@ -202,6 +221,7 @@
             "images/NIKE/PEGASUS.png"
         ],
         "category": "Nike",
+        "stok": 6,
         "isTrending": true,
         "description": "Dirancang untuk para penggemar outdoor, sepatu lari tahan air ini memberikan stabilitas dan cengkeraman di medan yang kasar. Teknologi GORE-TEX memastikan lari tetap kering dalam kondisi basah, sementara bantalan responsif menawarkan kenyamanan untuk jarak jauh."
     },
@@ -213,6 +233,7 @@
             "images/NIKE/DLR.png"
         ],
         "category": "Nike",
+        "stok": 9,
         "description": "Awalnya sepatu basket, Dunk Low Retro telah menjadi ikon gaya hidup dengan garis bersih, profil rendah, dan bagian atas kulit yang tahan lama. Versi ini menampilkan warna-warna baru untuk memberikan sentuhan segar pada siluet yang abadi."
     },
     {
@@ -223,6 +244,7 @@
             "images/NIKE/VAPORFLY.png"
         ],
         "category": "Nike",
+        "stok": 22,
         "description": "Sepatu balap kelas atas, Vaporfly 3 memberikan kecepatan optimal dengan desain ringan dan busa responsif. Pelat serat karbonnya memastikan dorongan, menjadikannya ideal untuk pelari kompetitif yang ingin mencapai rekor pribadi baru."
     },
     {
@@ -233,6 +255,7 @@
             "images/JHONSON/LBW.jpg"
         ],
         "category": "Jhonson",
+        "stok": 2,
         "description": "Sneaker low-top hitam-putih klasik, Galaxy V LC menghadirkan tampilan abadi untuk pengaturan kasual dan semi-formal. Desainnya yang bersih membuatnya cocok untuk berbagai gaya dan kesempatan."
     },
     {
@@ -243,6 +266,7 @@
             "images/JHONSON/SHC.jpg"
         ],
         "category": "Jhonson",
+        "stok": 5,
         "description": "Sneaker high -top all-black yang ramping ini memberikan tampilan monokrom yang trendi, cocok untuk gaya urban dan streetwear. Desainnya yang sederhana melengkapi baik pakaian kasual maupun edgy."
     },
     {
@@ -253,6 +277,7 @@
             "images/JHONSON/WBW.jpg"
         ],
         "category": "Jhonson",
+        "stok": 15,
         "description": "Model low-cut yang nyaman dalam warna hitam, ideal untuk tampilan kasual namun stylish. Woosh LC Black dapat dipadukan dengan berbagai outfit, menjadikannya sebagai staple fleksibel dalam lemari pakaian."
     }
 ]

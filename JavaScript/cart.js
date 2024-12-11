@@ -107,11 +107,30 @@ function removeFromCart(index) {
     checkCart();
 }
 
-function increaseQuantity(index) {
-    cart[index].quantity += 1;
-    saveCart();
-    checkCart();
+async function increaseQuantity(index) {
+    let product = cart[index];
+
+    try {
+        // Fetch product data from the JSON file
+        let response = await fetch('json/products.json');
+        let json = await response.json();
+
+        // Find the product based on the productId in the cart
+        let productStock = json.find(item => item.id == product.id)?.stok || 0; // Get stock from the fetched JSON data
+
+        // Check if the current quantity is less than the available stock
+        if (product.quantity < productStock) {
+            cart[index].quantity += 1;
+            saveCart();
+            checkCart();
+        } else {
+            alert("Stok habis");
+        }
+    } catch (error) {
+        console.error('Error fetching the data', error);
+    }
 }
+
 
 function decreaseQuantity(index) {
     if (cart[index].quantity > 1) {

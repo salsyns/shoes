@@ -3,6 +3,7 @@ main{
 }
 .product-header{
     background-color: #f2f2f2;
+    margin-top: -6%;
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;

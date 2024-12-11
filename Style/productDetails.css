@@ -43,6 +43,12 @@ main .container{
     color: #868686;
     margin: 20px 0;
 }
+.product_stok {
+    font-size: 16px;
+    color: #333; /* Ganti dengan warna yang sesuai */
+    margin: 10px 0; /* Jarak antara deskripsi dan stok */
+    font-weight: bold; /* Agar teks stok lebih tebal */
+}
 .buttons{
     display: flex; 
     justify-content: left;

@@ -138,6 +138,12 @@
         </p>
        </div>
     </footer>
+    <script>
+        var userName = localStorage.getItem("userName");
+        if (userName) {
+            document.getElementById("user_name").textContent = userName;
+        }
+    </script>
     <script src="JavaScript/main.js"></script>
    <script src="JavaScript/validation.js"></script>
    <script src="JavaScript/cart.js"></script>

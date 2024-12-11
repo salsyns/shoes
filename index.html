@@ -157,8 +157,8 @@
     </div>
     <div class="news hight">
         <div class="news-text">
-            <h4>Pengumuman!</h4>
-            <p>Daftar untuk mendapatkan pengumuman dari kami dan dapatkan potongan 20% untuk pembelian pertama Anda</p>
+            <h4>Pemberitahuan!</h4>
+            <p>Daftar untuk mendapatkan Pemberitahuan dari kami dan dapatkan potongan 5% untuk pembelian pertama Anda</p>
         </div>
         <div class="Subscribe-form">
             <input type="email" name="email" placeholder="Masukkan Email Kamu" autocomplete="off">
@@ -218,6 +218,12 @@
             </p>
         </div>
     </footer>
+    <script>
+        var userName = localStorage.getItem("userName");
+        if (userName) {
+            document.getElementById("signout").textContent = userName;
+        }
+    </script>
     <script src="JavaScript/index.js"></script>
     <script src="JavaScript/main.js"></script>
     <script src="JavaScript/cart.js"></script>

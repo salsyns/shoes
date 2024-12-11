@@ -82,7 +82,7 @@ function displayTrendingProducts(trendingProducts){
             </a>
         </div>
         <div class="card-info">
-             <h4 class="product-name" onclick=displayDetails(${trendingProducts[i].id});>${trendingProducts[i].name}</h4>
+             <h4 class="product-name" onclick=displayDetails(${trendingProducts[i].id});>${trendingProducts[i].name} (${trendingProducts[i].stok})</h4>
              <h5 class="product-price">${trendingProducts[i].price}</h5>
         </div>
     </div>`

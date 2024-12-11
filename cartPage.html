@@ -63,7 +63,7 @@
                         </h2>
                         <div class="apply_code">
                             <input type="text" id="code" placeholder="Masukkan Kode Promo">
-                            <button >Selesai</button>
+                            <button onclick="fetchPromoData()">Apply Promo</button>
                         </div>
                     </div>
                     <div class="summary">
@@ -83,6 +83,12 @@
                             </div>
                         </div>
                         <button class="checkout" onclick="checkOut();">Pembayaran</button>
+                        <div>
+                            <h3>Payment QR</h3>
+                            <img id="payment-qr" src="" alt="QR Code Pembayaran" style="width: 200px; height: 200px;">
+                        </div>
+                        
+                        <button id="payment-button">Pay with QR</button>
                     </div>
                  </div>
              </div>
@@ -158,6 +164,12 @@
        </div>
     </footer>
     <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+    <script>
+        var userName = localStorage.getItem("userName");
+        if (userName) {
+            document.getElementById("user_name").textContent = userName;
+        }
+    </script>
     <script src="JavaScript/main.js"></script>
     <script src="JavaScript/cart.js"></script>
 </body>

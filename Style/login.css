@@ -73,7 +73,8 @@
 .alert{
     display: none;
     color: red;
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 4px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -5px;
 }
