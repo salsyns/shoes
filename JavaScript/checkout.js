@@ -40,10 +40,9 @@ function initiatePayment() {
         })
         .then(response => response.json())
         .then(data => {
-            if (data.status_code === '200') {
+            if (data.qrCodeUrl) {
                 // Tampilkan QR code untuk pembayaran
-                const qrImageUrl = data.qris.qr_code_url; // URL QR Code dari response Midtrans
-                document.getElementById('payment-qr').src = qrImageUrl;
+                document.getElementById('qr-code').src = data.qrCodeUrl;
             } else {
                 alert('Payment initiation failed');
             }
@@ -52,9 +51,9 @@ function initiatePayment() {
             console.error('Error initiating payment:', error);
             alert('Error initiating payment');
         });
-    } else {
-        alert('Invalid order or price');
-    }
+} else {
+    alert('Invalid order or price');
+}
 }
 
 // Panggil fungsi ini saat pengguna siap melakukan pembayaran
